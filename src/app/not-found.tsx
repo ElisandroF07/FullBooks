@@ -10,7 +10,7 @@ export default function NotFound() {
         <main className="notFound_container">
             <Image className="logo" src={logo} alt={'not-found'}/>
             <Image src={svg} alt={'not-found'}/>
-            <h1>OPS! Página não encontrada</h1>
+            <h1 style={{textAlign: "center"}}>OPS! Página não encontrada</h1>
             <Link href={'/auth/login'}>Ir para o login <FaArrowRightLong/></Link>
         </main>
     )

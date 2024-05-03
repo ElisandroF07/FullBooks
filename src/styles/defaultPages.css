@@ -44,3 +44,19 @@
 .notFound_container > a:hover > svg {
     transform: translateX(5px);
 }
+
+@media screen and (max-width: 520px) {
+    .notFound_container > img {
+        width: 92%;
+    }
+    .notFound_container > h1 {
+        font-size: 1.2em;
+    }
+    .notFound_container > h1, .notFound_container > p {
+        width: 87%;
+    }
+    .notFound_container > a {
+        margin-top: 20px;
+        width: 90%;
+    }
+}
