@@ -1,0 +1,46 @@
+.notFound_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 100px !important;
+    height: 60px !important;
+}
+.notFound_container > img {
+    width: 500px;
+}
+.notFound_container > h1 {
+    font-size: 1.5rem;
+    width: 450px;
+    text-align: left;
+}
+.notFound_container > p {
+    max-width: 450px;
+    font-weight: 300;
+}
+.notFound_container > a {
+    padding: 10px 20px;
+    background-color: var(--color-primary);
+    color: var(--color-primary-text);
+    border-radius: var(--border-radius);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+.notFound_container > a > svg {
+    transition: transform .5s;
+}
+.notFound_container > a:hover > svg {
+    transform: translateX(5px);
+}

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Rubik } from "next/font/google";
 import "@/styles/globals.css";
+import NextTopLoader from 'nextjs-toploader';
+
 
 const inter = Rubik({ subsets: ["latin"] });
 
@@ -16,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}><NextTopLoader />{children}</body>
     </html>
   );
 }
