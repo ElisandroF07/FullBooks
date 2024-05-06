@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Rubik } from "next/font/google";
 import "@/styles/globals.css";
 import NextTopLoader from 'nextjs-toploader';
+import { Analytics } from "@vercel/analytics/react"
 
 
 const inter = Rubik({ subsets: ["latin"] });
