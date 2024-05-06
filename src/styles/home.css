@@ -1,0 +1,647 @@
+.home_container {
+    width: 100%;
+    height: 100%;
+    font-size: 0.85em;
+}
+
+/*==================== NAVBAR ====================*/
+
+.home_navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    font-size: 0.85em;
+}
+.home_navbar > img {
+    width: 100px;
+    height: 60px;
+}
+.home_navbar > .navbar_links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: max-content;
+    height: max-content;
+    list-style-type: none;
+}
+.home_navbar > .navbar_links > li:nth-child(1) > a {
+    text-decoration: none;
+    color: var(--color-primary);
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+}
+.home_navbar > .navbar_links > li:nth-child(2) > a {
+    text-decoration: none;
+    background-color: var(--color-primary);
+    color: var(--color-primary-text);
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+}
+
+/*==================== NAVBAR ====================*/
+
+/*==================== HEADER ====================*/
+
+.home_header {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 40px;
+}
+.home_header > .header_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.home_header > .header_content > h1 {
+    font-size: 3.5em;
+    color: var(--color-titles);
+    font-weight: 600;
+    line-height: 60px;
+}
+.home_header > .header_content > p {
+    font-size: 0.9em;
+    font-weight: 400;
+    color: var(--color-titles);
+}
+.home_header > .header_content > a {
+    text-decoration: none;
+    background-color: var(--color-primary);
+    color: var(--color-primary-text);
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: max-content;
+}
+
+/*==================== HEADER ====================*/
+
+/*==================== SECTION 1 ====================*/
+
+.section1 {
+    width: 100%;
+    height: max-content;
+    background-color: var(--color-primary-text);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 100px 0px;
+}
+.section1 > h2 {
+    font-size: 1.8em;
+    color: var(--color-titles);
+    font-weight: 600;
+    line-height: 60px;
+}
+.section1 > p {
+    font-size: 0.9em;
+    font-weight: 400;
+    color: var(--color-titles);
+}
+.section1_content {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 40px 40px;
+}
+.section1_card {
+    width: 300px;
+    height: 250px;
+    border-radius: var(--border-radius);
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    transition: transform .3s;
+    cursor: default;
+}
+.section1_card > .icon_container {
+    width: 50px;
+    height: 50px;
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary-second);
+}
+.section1_card > .icon_container > svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--color-primary);
+}
+.section1_card > h3 {
+    font-size: var(--font-lg);
+    color: var(--color-titles);
+    font-weight: 600;
+    line-height: 60px;
+}
+.section1_card > p {
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.85em;
+    color: var(--color-titles);
+}
+.section1_card:hover {
+    transform: scale(1.1);
+}
+
+/*==================== SECTION 1 ====================*/
+
+/*==================== BOOKS CAROUSEL ====================*/
+
+.section_carousel {
+    width: 100%;
+    height: 600px;
+    padding: 100px 40px;
+    position: relative;
+}
+books_carousel {
+    width: 1000px;
+    height: 100%;
+}
+book_card {
+    padding: 20px;
+    background-color: var(--color-primary-text);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: var(--border-radius);
+    position: relative;
+    transition: .3s;
+    cursor: pointer;
+    width: 300px !important;
+}
+book_card > .image {
+    background-image: url(../assets/images/logo_mid_size.png);
+    background-color: var(--color-secondary);
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    border-radius: var(--border-radius);
+    width: 100%;
+    border-radius: var(--border-radius);
+    height: 70%;
+}
+book_card > h3 {
+    font-size: 0.9em;
+    color: var(--color-titles);
+    font-weight: 600;
+    line-height: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+book_card > p {
+    width: 100%;
+    text-align: justify;
+    font-weight: 400;
+    font-size: 0.85em;
+    color: var(--color-titles);
+}
+book_card > .type {
+    padding: 5px 15px; 
+    border-radius: 30px;
+    background-color: var(--color-primary2);
+    color: var(--color-primary2-text);
+    font-weight: 400;
+    font-size: 0.85em;
+    width: max-content;
+    position: absolute;
+    bottom: 37px;
+    right: 20px;
+}
+book_card:hover {
+    transform: scale(1.2);
+}
+.section_carousel > .next, .prev {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--border-radius);
+    background-color: var(--color-primary-second);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.section_carousel > .next {
+    top: calc(50% - 40px);
+    right: 50px;
+}
+.section_carousel > .prev {
+    top: calc(50% - 40px);
+    left: 50px;
+}
+
+/*==================== BOOKS CAROUSEL ====================*/
+
+/*==================== SECTION NUMBERS ====================*/
+
+.section_numbers {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 40px;
+}
+.section_numbers > .left {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.section_numbers > .left > h2 {
+    font-size: var(--font-x);
+    color: var(--color-titles);
+    font-weight: 600;
+    line-height: 45px;
+}
+.section_numbers > .left > p {
+    width: 100%;
+    text-align: left;
+    font-weight: 400;
+    font-size: 0.85em;
+    color: var(--color-titles);
+}
+.section_numbers > .right {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-row: 1fr 1fr;
+    row-gap: 40px;
+    column-gap: 100px;
+}
+.section_numbers > .right > div {
+    display: grid;
+    grid-template-columns: 60px 100px;
+    grid-template-rows: 20px 20px;
+    align-items: center;
+    justify-content: center;
+}
+.section_numbers > .right > div > .icon_container {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary-second);
+}
+.section_numbers > .right > div > .icon_container > svg {
+    width: 20px;
+    height: 20px;
+    color: var(--color-primary);
+}
+.section_numbers > .right > div > h3 {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: var(--font-lg);
+    color: var(--color-titles);
+    font-weight: 600;
+    line-height: 60px;
+    align-items: center;
+    justify-content: center;
+}
+.section_numbers > .right > div > p {
+    width: 100%;
+    text-align: justify;
+    font-weight: 400;
+    font-size: 0.85em;
+    color: var(--color-titles);
+    grid-column: 2;
+    grid-row: 2;
+}
+
+/*==================== SECTION NUMBERS ====================*/
+
+/*==================== SECTION JOIN ====================*/
+
+.section_join {
+    width: 100%;
+    height: 350px;
+    background-color: var(--color-primary-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 40px;
+}
+.section_join > h2 {
+    font-size: var(--font-x);
+    color: var(--color-titles);
+    font-weight: 600;
+    line-height: 45px;
+}
+.section_join > p {
+    font-weight: 400;
+    font-size: 0.85em;
+    color: var(--color-titles);
+}
+.section_join > a {
+    text-decoration: none;
+    background-color: var(--color-primary);
+    color: var(--color-primary-text);
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: max-content;
+    font-size: 0.85em;
+    margin-top: 20px;
+}
+
+
+/*==================== SECTION JOIN ====================*/
+
+/*==================== FOOTER ====================*/
+
+.home_footer {
+    width: 100%;
+    height: max-content;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary-text);
+}
+.home_footer > .footer_content {
+    width: 100%;
+    height: 50px;
+    border-radius: var(--border-radius);
+    background-color: var(--color-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home_footer > .footer_content > p {
+    font-weight: 400;
+    font-size: 0.85em;
+    color: var(--color-titles);
+    letter-spacing: 2px;
+}
+.home_footer > .footer_content > p > a {
+    color: var(--color-primary);
+}
+
+/*==================== FOOTER ====================*/
+
+@media screen and (max-width: 1200px) {
+    books_carousel {
+        width: 840px;
+    }
+    book_card {
+        width: 240px !important;
+        height: 340px !important;
+    }
+    .type {
+        top: 30px !important;
+        right: 30px !important;
+        height: max-content;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    books_carousel {
+        width: 652px;
+    }
+    book_card {
+        width: 300px !important;
+        height: 340px !important;
+    }
+    .type {
+        top: 30px !important;
+        right: 30px !important;
+        height: max-content;
+    }
+    .section1_card {
+        width: 245px;
+    }
+    .section1_card > h3 {
+        line-height: 26px;
+        text-align: center;
+        margin: 10px 0px;
+    }
+    .home_header > img {
+        width: 350px;
+        height: 350px;
+    }
+    .home_header > .header_content > h1 {
+        font-size: var(--font-x);
+        line-height: 40px;
+    }
+    :root {
+        --font-lg: 1em;
+        --font-x: 2em;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    books_carousel {
+        width: 550px;
+    }
+    book_card {
+        width: 250px !important;
+        height: 340px !important;
+    }
+    .type {
+        top: 30px !important;
+        right: 30px !important;
+        height: max-content;
+    }
+    .section1_card {
+        width: 160px;
+        height: 160px;
+        justify-content: center;
+    }
+    .section1_card > p {
+        display: none;
+    }
+    .home_header > img {
+        width: 320px;
+        height: 320px;
+    }
+    .header_content {
+        padding: 0px 20px;
+    }
+    .home_header > .header_content > h1 {
+        font-size: var(--font-x);
+        line-height: 40px;
+    }
+    .section_numbers {
+        flex-direction: column;
+    }
+    .section_numbers > .left {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    .section_numbers > .left > h2, .section_numbers > .left > p {
+        text-align: center;
+    }
+    :root {
+        --font-lg: 1em;
+        --font-x: 2em;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    books_carousel {
+        width: 507px;
+    }
+    book_card {
+        width: 228px !important;
+        height: 288px !important;
+    }
+    .section_carousel > .next {
+        top: calc(50% - 40px);
+        right: 20px;
+    }
+    .section_carousel > .prev {
+        top: calc(50% - 40px);
+        left: 20px;
+    }
+    .home_header {
+        padding: 10px 20px;
+    }
+    .section_carousel {
+        padding: 50px 20px;
+    }
+    .home_footer {
+        padding: 20px;
+    }
+    .section_carousel {
+        height: 428px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .prev {
+        display: none;
+    }
+    .section_carousel > .next {
+        display: none !important;
+    }
+    .home_header {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .header_content {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .section1_content {
+        padding: 40px 20px;
+    }
+    .section_numbers {
+        padding: 0px 20px;
+    }
+    .section_join > h2 {
+        text-align: center;
+    }
+    book_card {
+        width: 197px !important;
+        height: 261px !important;
+    }
+    books_carousel {
+        width: 443px;
+    }
+    :root {
+        --font-lg: 0.9em;
+    }
+    .section1_card > .icon_container {
+        min-width: 50px;
+        min-height: 50px;
+    }
+    .section1_content {
+        flex-flow: wrap;
+        row-gap: 40px;
+    }
+    .section1_card {
+        margin: 0px 10px;
+    }
+    .section_join > p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    book_card {
+        width: 285px !important;
+        height: 350px !important;
+    }
+    book_card > .image {
+        height: 80%;
+    }
+    books_carousel {
+        width: 285px;
+    }
+    .section_carousel {
+        height: 545px;
+    }
+    :root {
+        --font-lg: 0.9em;
+        --font-x: 1.5em;
+    }
+    .section1 > h2 {
+        font-size: 1.3em;
+    }
+    .section_numbers > .right {
+        column-gap: 50px;
+        row-gap: 35px;
+        display: flex;
+        flex-flow: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .section_numbers {
+        padding: 33px 16px !important;
+        height: max-content !important;
+    }
+    .home_footer > .footer_content > p {
+        font-size: 0.75em;
+    }
+    .home_navbar > .navbar_links > li:nth-child(1) > a {
+        padding: 0px;
+    }
+    .home_navbar {
+        padding: 10px 20px;
+    }
+    .home_navbar > .navbar_links {
+        gap: 0;
+    }
+    .home_navbar > .navbar_links > li:nth-child(2) > a {
+        display: none;
+    }
+}
+@media screen and (max-width: 322px) {
+    book_card {
+        width: 260px !important;
+        height: 350px !important;
+    }
+    books_carousel {
+        width: 285px;
+    }
+}

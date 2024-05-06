@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 :root {
+  --color-primary-second: #0070cc37;
+  --color-primary2: #f686331a;
+  --color-primary2-text: #f68633;
+  --color-titles: #4D4D4D;
   --color-foreground: #000;
   --color-background: #F5F7FA;
   --color-primary: #006FCC;
@@ -12,6 +16,8 @@
   --border-radius: 10px;
   --font-sm: 0.9em
   --font-md: 0.95em;
+  --font-lg: 1.2em;
+  --font-x: 2.5em;
 }
 
 /* @media (prefers-color-scheme: dark) {
