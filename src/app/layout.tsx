@@ -8,7 +8,7 @@ import { Analytics } from "@vercel/analytics/react"
 const inter = Rubik({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "FULLBOOKS",
+  title: "FullBooks",
   description: "E-Book",
 };
 

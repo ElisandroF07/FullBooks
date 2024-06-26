@@ -17,8 +17,13 @@ export default function BooksCarousel(){
     const [bookList, setBookList] = useState<IResponse>({dados: []})
 
     async function getBooks() {
-        const response = await api.get('/livros')
-        setBookList(response.data)
+        try {
+            const response = await api.get('/livros')
+            setBookList(response.data)
+        }
+        catch {
+            console.log("Erro ao obter livros!")
+        }
     }
 
     useEffect(()=>{getBooks()}, [])
